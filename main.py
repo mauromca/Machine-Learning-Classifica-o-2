@@ -33,7 +33,8 @@ treino_x, teste_x, treino_y, teste_y = train_test_split(
     x, y, random_state=SEED, test_size=0.25, stratify=y)
 
 # Impressão do número de elementos nos conjuntos de treino e teste
-print(f"treinaremos com {len(treino_x)}/100 elementos e testaremos com {len(teste_x)} elementos")
+print(
+    f"treinaremos com {len(treino_x)}/100 elementos e testaremos com {len(teste_x)} elementos")
 
 # Criação do modelo de classificação utilizando o algoritmo LinearSVC
 modelo = LinearSVC()
@@ -49,3 +50,5 @@ acuracia = accuracy_score(teste_y, previsoes)
 
 # Impressão da acurácia do modelo
 print(f"O acerto foi de: {acuracia:.2%}")
+
+# repare que o resultado será sempre o mesmo agora.
